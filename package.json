@@ -1,5 +1,5 @@
 {
-  "name": "saucelabs-connector",
+  "name": "@otto-de/saucelabs-connector",
   "version": "0.3.0",
   "main": "lib/index",
   "description": "Helps connect the local machine to SauceLabs and start a remote browser.",
