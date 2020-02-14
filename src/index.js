@@ -95,11 +95,11 @@ export default class SaucelabsConnector {
         };
 
         var response = await requestPromised(params);
-        var concurrency = JSON.parse(response.body).concurrency;
-        var allowed = concurrency.allowed.vms;
-        var organizationCurrent = concurrency.organization.current.vms;
+        var organization = JSON.parse(response.body).concurrency.organization;
+        var allowed = organization.allowed.vms;
+        var current = organization.current.vms;
 
-        return allowed - organizationCurrent;
+        return allowed - current;
     }
 
     async getSessionUrl (browser) {
