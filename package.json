@@ -13,6 +13,7 @@
     "url": "https://github.com/AlexanderMoskovkin/saucelabs-connector.git"
   },
   "scripts": {
+    "prepack": "gulp build",
     "test": "gulp lint"
   },
   "dependencies": {
